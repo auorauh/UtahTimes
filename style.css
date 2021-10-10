@@ -1,1 +1,88 @@
-add css here
+body {
+    background-color: #eee;
+    font-family: georgia;
+  }
+  h1 {
+    font-family: "ChomskyRegular", Courier;
+    font-weight: normal;
+    font-style: normal;
+  }
+  .container {
+    width: 70%;
+    margin: auto;
+  }
+  header {
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .banner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-bottom: 2px solid gray;
+    border-bottom-style: dashed;
+  }
+  .links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+    margin: 0.75em 0;
+  }
+  @media screen and (max-width: 1000px) {
+    .links {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .links {
+      display: none;
+    }
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  .container-one {
+    margin: auto;
+    display: flex;
+    gap: 0.7em;
+    padding-top: 0.5em;
+  }
+  .col-one {
+    flex: 1 1 0%;
+    padding: 0.5em;
+  }
+  .col-two {
+    flex: 2 1 0%;
+    padding: 0.5em;
+  }
+  .col-three {
+    flex: 1 1 0%;
+    padding: 0.5em;
+  }
+  .arc-img {
+    height: auto;
+  }
+  @media screen and (max-width: 600px) {
+    .arc-img {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .arc-img {
+      display: none;
+    }
+  }
+  
