@@ -11,6 +11,13 @@ body {
     width: 70%;
     margin: auto;
   }
+  .uIcon {
+    max-width:auto;
+    max-height:3em;
+  }
+  .icon {
+    display: flex;
+  }
   header {
     font-size: 2em;
     display: flex;
@@ -20,6 +27,7 @@ body {
   .banner {
     display: flex;
     justify-content: center;
+    align-items: center;
     border-bottom: 2px solid gray;
     border-bottom-style: dashed;
   }
@@ -30,14 +38,45 @@ body {
     padding: 0 2em;
     margin: 0.75em 0;
   }
+  .smlLinks {
+    display: flex;
+  }
+  .smlView {
+    position: relative;
+    display: none;
+    font-size: inherit;
+  }
+  .dropbtn {
+    border: none;
+    background-color: #eee;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .smlView:hover .dropdown-content {display: block}
   @media screen and (max-width: 1000px) {
-    .links {
+    .banner {
+      justify-content: space-between;
+    }
+    .smlLinks {
       display: none;
     }
-  }
-  @media screen and (max-width: 1000px) {
-    .links {
-      display: none;
+    .smlView {
+      display: inline-block;
     }
   }
   ul {
@@ -72,7 +111,8 @@ body {
     padding: 0.5em;
   }
   .arc-img {
-    height: auto;
+    max-width: 100%;
+    max-height: 100%;
   }
   @media screen and (max-width: 600px) {
     .arc-img {
